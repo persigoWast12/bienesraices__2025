@@ -1,0 +1,347 @@
+* {
+  font-family: system-ui, 'Georgia';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: grey;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* header division con sp-btwn */
+/*main{
+    background-color: pink;
+}*/
+.subt {
+  /* subtitulos (H2, H3, ...)*/
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+
+.menu {
+  color: #004934;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-right: 10px;
+  transition: color 0.125s ease-in-out 0.125s;
+  /* aca hacemos un 'delay' al momento de dejar de focusear el item del menu*/
+}
+
+/* menu */
+.menu:hover {
+  color: white;
+}
+
+/* CAMBIO DE COLOR CON CURSOR*/
+.nav {
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+.imagen-de-fondo {
+  background-image: url("./img/fondo-bienes-raices.jpg");
+  width: 100%;
+  height: 500px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /*esto hace que la img no se repita si no hay espacio*/
+}
+
+.imagen-de-fondo h2 {
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 0;
+  font-size: 45px;
+  opacity: 0.4;
+}
+
+/* subtitulos del fondo */
+
+/* sobre nosotros */
+/*.sobre-nosotros, .departamentos-y-casas,.imagen-de-fondo{
+    margin-bottom: 500px;
+}*/
+.nosotros-box {
+  display: flex;
+  flex-direction: row;
+  /*pone los items (class: 'nosotros') en row (columna) con flex*/
+  text-align: center;
+  margin: 0 25px 0 25px;
+  /*border: yellow 5px solid; /*test tamaño w.& h. */
+}
+
+.nosotros-box img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 25px;
+  /*border: blue 5px solid; /* test tamaño w.& h. */
+}
+
+.nosotros {
+  background-color: #fff;
+  border-radius: 2.5%;
+  border: grey 2.5px solid;
+  /*border: red 5px solid; /* test tamaño w.& h.*/
+}
+
+.nosotros p,
+.nosotros h2 {
+  text-align: left;
+  margin: 0 10px 10px 10px;
+  /*border: orange 5px solid; /* test tamaño w.& h. */
+}
+
+.nosotros h2 {
+  margin: 0 10px 10px 10px;
+  /*border: green 5px solid; /* test tamaño w.& h. */
+}
+
+/* separando los divs de seguridad, billete y reloj (w/ id)*/
+#nosotros-seguridad,
+#nosotros-billete,
+#venta-1,
+#venta-2 {
+  margin-right: 10px;
+}
+
+/*propiedades*/
+.ventas-box {
+  display: flex;
+  flex-direction: row;
+  /*pone los items (class: 'ventas') en row (columna) con flex*/
+  text-align: center;
+  margin: 0 25px 25px 25px;
+  /* 0 arriba, 25px derecha, 25px abajo, 25px izquierda*/
+}
+
+.ventas-box img {
+  width: 250px;
+  height: 250px;
+  margin: 10px 10px 10px 10px;
+}
+
+.ventas-box h2 {
+  margin: 10px 10px 10px 10px;
+}
+
+.ventas-box p {
+  margin: 10px 10px 10px 10px;
+}
+
+.ventas {
+  background-color: #fff;
+  border: grey 2.5px solid;
+  /*border: red 5px solid; /* test tamaño w.& h.*/
+}
+
+.iconos-box {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 25px 0 25px;
+}
+
+.iconos img {
+  width: 50px;
+  height: auto;
+  align-items: start;
+}
+
+/* corresponde a los iconos de cada art de venta (propiedad)*/
+.iconos {
+  display: flex;
+  flex-direction: column;
+  /*espacio entre los iconos*/
+  align-items: center;
+  gap: 8px;
+}
+
+.price,
+.text-prop,
+.ventas-box h2 {
+  text-align: left;
+}
+
+.boton {
+  margin: 15px 0 15px 0;
+}
+
+.boton button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton button:hover {
+  background-color: #0056b3;
+}
+
+/* formulario de contacto*/
+.contact-us {
+  background-image: url("./img/fondo-contacto.jpg");
+  width: 100%;
+  height: 550px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.contact-us h2 {
+  color: white;
+}
+
+.contact-us h2 {
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+/* formulario*/
+.formulario {
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-group .form-row {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #f8f9fa;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.required {
+  color: red;
+}
+
+.summit-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #d2691e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.summit-button:hover {
+  background-color: #b8591a;
+}
+
+.submit-btn:active {
+  transform: translateY(1px);
+}
+
+/**/
+hr {
+  width: 1000px;
+  height: 5px;
+  margin: 0px;
+  background-color: green;
+  border-color: green;
+}
+
+.blog-container {
+  display: flex;
+  border: 1px solid #ddd;
+  margin: 0 30px 0 30px;
+  padding: 20px 50px 20px 50px;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.img-blog img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.text-blog h2 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+
+}
+
+.text-blog p {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+/* definido en testimoniales.js*/
+.testimonial {
+  border: 1px solid #ddd;
+  margin: 10px 30px;
+  padding: 5px;
+}
+
+.testimonial p,
+cite {
+  margin-left: 20px;
+}
+
+.img-testimoniales {
+  width: 50px;
+  height: 50px;
+}
