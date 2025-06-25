@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Bienes Raices</title>
   </head>
   <body>
@@ -72,94 +72,7 @@
       <!-- propiedades a la venta -->
       <section class="departamentos-y-casas">
         <h3 class="subt">Departamentos y casas en venta</h3>
-        <div class="ventas-box">
-          <div class="ventas" id="venta-1">
-            <img src="./img/casa-lujo.jpg" alt="casa-lujo" />
-            <h2>Casa con terminados de lujo</h2>
-            <p class="text-prop">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non vel
-              quisquam soluta, eveniet sed culpa saepe rerum error obcaecati!
-              Magni est vitae, tempora aperiam nostrum ex delectus officiis
-              reprehenderit expedita?
-            </p>
-            <p class="price">U$3.000.000,00</p>
-            <div class="iconos-box">
-              <div class="iconos">
-                <img src="./img/icono_inodoro.png" alt="" />
-                <p>2</p>
-              </div>
-              <div class="iconos">
-                <img src="./img/icono-estacionamiento.png" alt="" />
-                <p>3</p>
-              </div>
-              <div class="iconos">
-                <img src="./img/icono-dormitorio.png" alt="" />
-                <p>4</p>
-              </div>
-            </div>
-            <div class="boton">
-              <button>VER</button>
-            </div>
-          </div>
-
-          <div class="ventas" id="venta-2">
-            <img src="./img/casa-lujo.jpg" alt="casa-lujo" />
-            <h2>Casa con terminados de lujo</h2>
-            <p class="text-prop">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non vel
-              quisquam soluta, eveniet sed culpa saepe rerum error obcaecati!
-              Magni est vitae, tempora aperiam nostrum ex delectus officiis
-              reprehenderit expedita?
-            </p>
-            <p class="price">U$3.000.000,00</p>
-            <div class="iconos-box">
-              <div class="iconos">
-                <img src="./img/icono_inodoro.png" alt="" />
-                <p>2</p>
-              </div>
-              <div class="iconos">
-                <img src="./img/icono-estacionamiento.png" alt="" />
-                <p>3</p>
-              </div>
-              <div class="iconos">
-                <img src="./img/icono-dormitorio.png" alt="" />
-                <p>4</p>
-              </div>
-            </div>
-            <div class="boton">
-              <button>VER</button>
-            </div>
-          </div>
-
-          <div class="ventas" id="venta-3">
-            <img src="./img/casa-lujo.jpg" alt="casa-lujo" />
-            <h2>Casa con terminados de lujo</h2>
-            <p class="text-prop">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non vel
-              quisquam soluta, eveniet sed culpa saepe rerum error obcaecati!
-              Magni est vitae, tempora aperiam nostrum ex delectus officiis
-              reprehenderit expedita?
-            </p>
-            <p class="price">U$3.000.000,00</p>
-            <div class="iconos-box">
-              <div class="iconos">
-                <img src="./img/icono_inodoro.png" alt="" />
-                <p>2</p>
-              </div>
-              <div class="iconos">
-                <img src="./img/icono-estacionamiento.png" alt="" />
-                <p>3</p>
-              </div>
-              <div class="iconos">
-                <img src="./img/icono-dormitorio.png" alt="" />
-                <p>4</p>
-              </div>
-            </div>
-            <div class="boton">
-              <button>VER</button>
-            </div>
-          </div>
-        </div>
+        <div class="ventas-box" id="propiedad-container"></div>
       </section>
       <!-- contactate con nosotros -->
       <section class="contact-us">
@@ -172,22 +85,22 @@
               <!-- div por cada etiqueta del form (label+inp)-->
               <!-- firstname inp-->
               <label for="nombre">Nombre <span class="required">*</span></label>
-              <input type="text" /><br />
+              <input type="text" required/><br />
             </div>
             <div class="form-group">
               <!-- lastname inp-->
               <label for="apellido">Apellido <span class="required">*</span></label>
-              <input type="text" /><br />
+              <input type="text" required/><br />
             </div>
           </div>
           <div class="form-group">
             <!-- email inp-->
             <label for="email">E-Mail <span class="required">*</span></label>
-            <input type="email" /><br />
+            <input type="email" required/><br />
           </div>
           <div class="form-group">
             <label for="mensaje">Mensaje <span class="required">*</span></label>
-            <textarea name="mensaje" id="mensaje" placeholder="Escriba su mensaje aquí..."></textarea>
+            <textarea name="mensaje" id="mensaje" placeholder="Escriba su mensaje aquí..." required></textarea>
           </div>
 
           <!-- button <"send"> -->
@@ -222,9 +135,8 @@
       </section>
       <section id="testimoniales">
         <h2 class="subt">Testimonios</h2>
-        <div id="testimoniales-container">
-
-        </div>
+        <div id="testimoniales-container"></div>
+        <button id="btn">add</button>
       </section>
       <!-- end main -->
        <footer>
@@ -232,7 +144,9 @@
        </footer>
     </main>
     
-    <script src="./js/testimoniales.js"></script> <!-- carga la sección de testimoniales desde "testimoniales.js" para dicha sección-->
+    <script src="./js/testimoniales.js"></script> <!--carga la sección de testimoniales desde "testimoniales.js" para dicha sección-->
+    <script src="./js/propiedades.js"></script> <!--carga la sección de propiedades desde "propiedades.js" para dicha sección-->
+    <script src="./js/testimoniales-add-button.js"></script>
 
   </body>
 </html>

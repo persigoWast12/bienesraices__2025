@@ -10,14 +10,14 @@ const USERS_TESTIMONIALES=[
         "ranked":4
     },
     {
-        "name": "Ana Lopéz",
+        "name": "Ana López",
         "opinion":"Poca atención al cliente, mucha tardanza para la resolucion de mi consulta.",
         "ranked":2.5
     }
 
 ]
 
-function renderTestimonios(){
+function cargarTestimonios(){
     const container=document.getElementById("testimoniales-container");
     container.innerHTML="";
 
@@ -36,5 +36,4 @@ function renderTestimonios(){
     });
 }
 
-
-renderTestimonios()
+cargarTestimonios()
